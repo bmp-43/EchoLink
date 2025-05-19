@@ -4,7 +4,7 @@ import random
 from string import ascii_uppercase
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "nigger"
+app.config["SECRET_KEY"] = "secret_key_123"
 socketio = SocketIO(app)
 
 rooms = {}
