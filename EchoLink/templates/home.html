@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home | EchoLink{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>EchoLink</h1>
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="code" placeholder="Enter room code">
+        <div class="buttons">
+            <button type="submit" name="join" value="true">Join Room</button>
+            <button type="submit" name="create" value="true">Create Room</button>
+        </div>
+    </form>
+
+</div>
+
+
+{% endblock %}
+
